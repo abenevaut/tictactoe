@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Board : MonoBehaviour
 {
@@ -8,7 +6,7 @@ public class Board : MonoBehaviour
 
     private Cell[] mCells = new Cell[9];
 
-    public void Build(Main main)
+    public void Build(GameHandler main)
     {
         for(int i = 0; i <= 8; i++)
         {

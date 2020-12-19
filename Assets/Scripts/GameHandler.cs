@@ -1,14 +1,15 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Main : MonoBehaviour
+public class GameHandler : MonoBehaviour
 {
     public Board mBoard;
+
     public GameObject mWinner;
 
     private bool mXTurn = true;
+
     private int mTurnCount = 0;
 
     void Awake()
@@ -28,10 +29,6 @@ public class Main : MonoBehaviour
             StartCoroutine(EndGame(hasWinner));
 
             return;
-        }
-
-        {
-            print("Winner!");
         }
 
         mXTurn = !mXTurn;
